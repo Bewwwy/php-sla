@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Conta Corrente</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -60,8 +61,12 @@
                 <td><input type="number" name="saldo_inicial" value="0" step="0.01" min="0"></td>
             </tr>
             <tr>
+                <td><label for="deposito">Depóstio:</label></td>
+                <td><input type="number" name="deposito" step="0.01" min="0"></td>
+            </tr>
+            <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="cadastrar" name="cadastrar">
+                    <input type="submit" value="cadastrar" name="cadastrar" class="botao">
                 </td>
             </tr>
         </table>
