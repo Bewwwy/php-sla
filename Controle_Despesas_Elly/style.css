@@ -1,0 +1,70 @@
+html, body {
+    background-color: rgb(212, 212, 241);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 25vw;
+    margin: 0 auto;
+    padding: 2vw;
+    border: 1px solid rgb(120, 48, 138);
+    border-radius: 2vw;
+    background-color: white;
+    margin-top: 9vh;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.form-group {
+    margin-bottom: 2vh;
+
+}
+.a {
+    width: 10vw;
+    margin: 0 auto;
+    padding: .5vw;
+    font-size: 1vw;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="password"], input[type="text"] {
+    width: 10vw;
+    padding: .2vw;
+    border: 1px solid rgb(120, 48, 138);
+    background-color: rgb(235, 235, 235);
+}
+
+input[type="submit"] {
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: .5vw;
+    background-color: rgb(126, 74, 175);
+    border: none;
+    margin-top: .5vw;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(87, 47, 124);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1vw;
+    transition: .7s;
+}
+
+a:hover {
+    background-color: rgb(126, 74, 175);
+    color: white;
+    padding: .5vw;
+    border-radius: .5vw;
+    transition: .4s;
+}
