@@ -8,14 +8,19 @@
     <title>Controle de Despesas</title>
     <link rel="stylesheet" href="estilos_menu.css">
     <link rel="stylesheet" href="estilos_formulario.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
+    <!--imagem que representa o cadastro de clientes e de contas -->
+
+
     <?php
     require "menu.php"; // Importa o menu do sistema de Controle de Despesas
     ?>
     <div id="cadastro">
         <h3>CADASTRO DE CONTA</h3>
+        <img src="imagens/cadastro.png" alt="Controle de Despesas">
         <form name="cadastro" method="post" action="">
             <table>
                 <tr>
@@ -42,6 +47,7 @@
             </table>
         </form>
         <?php
+        require "footer.php";
         if (isset($_POST["cadastrar"])) {
     
             $codigo_cliente = $_POST["codigo_cliente"];
@@ -50,8 +56,8 @@
             $valor          = $_POST["valor"];
  
             require "conexao.php";
-            $sql = "INSERT INTO contas(lancamento, codigo_cliente, data, historico, valor)";
-            $sql .= " VALUES (null, '$codigo_cliente', '$data', '$hitorico', '$valor')";
+            $sql = "INSERT INTO contas(codigo_cliente, data, historico, valor)";
+            $sql .= " VALUES ('$codigo_cliente', '$data', '$historico', '$valor')";
             mysqli_query($conexao, $sql) or die(mysqli_error($conexao));
             echo "<script type =\"text/javascript\">alert('Conta cadastrada com sucesso!');</script>";
             echo "<p align='center'><a href='home.php'>Voltar</a></p>";

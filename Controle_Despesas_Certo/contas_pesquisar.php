@@ -7,8 +7,12 @@
     <title>Controle de Despesas - Pesquisa</title>
     <link rel="stylesheet" href="estilos_menu.css">
     <link rel="stylesheet" href="estilos_formulario.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
+    <!-- estilizar a tabela: cores: na primeira linha de fundo e na cor da fonte, e nas outras linhas cor diferente nas linhas-->
+
     <?php
         require "menu.php";
 
@@ -35,12 +39,15 @@
                     echo "<th width='100' align='right'>$lacamento</th>";
                     echo "<th width='100' align='right'>$codigo_cliente</th>";
                     echo "<th width='300' align='Left'>$data</th>";
-                    echo "<th width='100' align='Left'>$hitorico</th>";
+                    echo "<th width='100' align='Left'>$historico</th>";
                     echo "<th width='250' align='Left'>$valor</th>";
                     echo "<th width='50' align='center'><a href='contas_editar.php?lacamento=$lacamento'>Editar</a></th>";
                 echo "</tr>";
             }
         echo "</table>";
     ?>
+    <footer>
+    <p>&copy; Adryelly</p>
+</footer>
 </body>
 </html>

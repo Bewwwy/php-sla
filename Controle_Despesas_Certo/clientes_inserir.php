@@ -8,6 +8,7 @@
     <title>Controle de Despesas</title>
     <link rel="stylesheet" href="estilos_menu.css">
     <link rel="stylesheet" href="estilos_formulario.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -50,6 +51,7 @@
             </table>
         </form>
         <?php
+        require "footer.php";
         if (isset($_POST["cadastrar"])) {
             $nome           = $_POST["nome"];
             $cidade         = $_POST["cidade"];

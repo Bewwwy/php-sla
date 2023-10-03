@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos_menu.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="table.css">
     <title>Controle de Despesas - Pesquisa</title>
 </head>
 <body>
+    <!-- estilizar a tabela: cores: na primeira linha de fundo e na cor da fonte, e nas outras linhas cor diferente nas linhas-->
     <?php
         require "menu.php";
-        echo "<h3>LIstagem dos Clientes</h3>";
+        echo "<h3>Listagem dos Clientes</h3>";
         require "conexao.php";
         $sql="SELECT * FROM clientes ORDER BY nome";
         $resultado=mysqli_query($conexao,$sql) or die(mysqli_error($conexao));
@@ -37,5 +40,8 @@
                 echo"</tr>";
             }
     ?>
+    <footer>
+    <p>&copy; Adryelly</p>
+</footer>
 </body>
 </html>
